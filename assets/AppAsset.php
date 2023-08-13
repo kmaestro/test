@@ -23,6 +23,7 @@ class AppAsset extends AssetBundle
         'css/site.css',
     ];
     public $js = [
+        'js/jquery.inputmask.min.js',
         'js/main.js'
     ];
     public $depends = [
