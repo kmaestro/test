@@ -1,0 +1,334 @@
+a {
+    text-decoration: none;
+}
+
+div {
+    display: block;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+main > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    font-size: .9em;
+    height: 60px;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    content: '';
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 2px 4px;
+    background: transparent;
+}
+
+a.asc:after {
+    border-bottom: solid 7px #212529;
+    border-top-width: 0;
+}
+
+a.desc:after {
+    border-top: solid 7px #212529;
+    border-bottom-width: 0;
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding-top: 7px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 767px) {
+    .nav li > form > button.logout {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.blk-grid-content.blk-grid-content--gap-10 {
+    grid-gap: 10px;
+}
+
+.blk-grid-content {
+    display: grid;
+}
+
+.xxx-tab__body.active {
+    display: block;
+    width: 0;
+}
+
+.xxx-input-converter {
+    position: relative;
+}
+
+.xxx-input-converter__before-text {
+    position: absolute;
+    left: 15px;
+    top: 52%;
+    transform: translateY(-50%);
+    color: #9299a2;
+    font-size: 18px;
+    z-index: 1;
+    pointer-events: none;
+    line-height: 0;
+}
+
+.xxx-input-converter__input {
+    border: 1px solid #e8ecef;
+    border-radius: 5px;
+    min-height: 50px;
+    position: relative;
+    padding-left: 65px;
+    padding-right: 80px;
+    transition: border-color .3s ease;
+    font-size: 20px;
+    font-family: 'lato black', sans-serif;
+    outline: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.xxx-input-converter__img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    right: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.xxx-input-converter__close {
+    position: absolute;
+    right: 55px;
+    font-size: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    line-height: 0;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+    color: #333e50;
+    pointer-events: none;
+}
+
+.xxx-currency-grid__block {
+    background: white;
+    padding: 20px 15px 20px 15px;
+    border: 1px solid #e8ecef;
+    border-radius: 5px;
+    width: 400px;
+    scroll-snap-align: start;
+    scroll-margin-left: 15px;
+}
+
+.xxx-tab__list--only-border-light, .xxx-tab-list-wrap.xxx-tab-list-wrap--only-border-light {
+    border-bottom: 1px solid #e8ecef;
+}
+
+.xxx-line-h-1 {
+    line-height: 1;
+}
+
+.xxx-mb-15 {
+    margin-bottom: 15px;
+}
+
+.xxx-tab-list-wrap {
+    position: relative;
+}
+
+
+@media screen and (min-width: 890px)
+
+.xxx-currency-grid .xxx-currency-grid__block.xxx-currency-grid__block--separately, .xxx-currency-grid.xxx-currency-grid--three-col .xxx-currency-grid__block.xxx-currency-grid__block--separately {
+    -ms-grid-column: auto;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    width: calc(100% - 10px);
+}
+
+@media screen and (min-width: 740px)
+
+.xxx-currency-grid .xxx-currency-grid__block--separately {
+    margin-left: 10px;
+    width: calc(100% - 10px);
+}
+
+@media screen and (min-width: 740px)
+
+.xxx-currency-grid__block.xxx-currency-grid__block--separately {
+    padding: 20px;
+}
+
+@media screen and (min-width: 740px)
+
+.xxx-currency-grid__block + .xxx-currency-grid__block {
+    margin-left: 0;
+}
+
+.xxx-currency-grid__block + .xxx-currency-grid__block {
+    margin-left: 20px;
+}
+
+.xxx-currency-grid__block.xxx-currency-grid__block--separately, .xxx-currency-grid.xxx-currency-grid--column .xxx-currency-grid__block.xxx-currency-grid__block--separately {
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 740px)
+
+.xxx-currency-grid__block {
+    width: 100%;
+    min-width: unset;
+    scroll-snap-align: unset;
+    scroll-margin-left: unset;
+    padding-bottom: 5px;
+}
+
+.xxx-currency-grid__block {
+    background: white;
+    padding: 20px 15px 20px 15px;
+    border: 1px solid #e8ecef;
+    border-radius: 5px;
+    width: 435px;
+    scroll-snap-align: start;
+    scroll-margin-left: 15px;
+}
+
+.xxx-g-link:not(.xxx-g-link--default-lh) {
+    line-height: 1;
+}
+
+
+.xxx-text-bold {
+    font-family: "lato black", sans-serif;
+}
+
+.xxx-fs-18 {
+    font-size: 18px;
+}
+
+.xxx-g-link {
+    position: relative;
+    background-color: transparent;
+    border: 0;
+    color: #388ec3;
+    padding: 0;
+    outline: 0;
+    cursor: pointer;
+    -webkit-transition: color .25s;
+    -o-transition: color .25s;
+    transition: color .25s;
+}
+
+.xxx-tab__list.xxx-tab__list--fix-scrollbar {
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+}
+
+.xxx-tab__list--overflow-auto {
+    overflow: auto;
+}
+
+.xxx-tab__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.xxx-tab__list {
+    list-style-type: none;
+}
+
+.xxx-tab-list-wrap.xxx-tab-list-wrap--pt-0 .xxx-tab__item a, .xxx-tab-list-wrap.xxx-tab-list-wrap--pt-0 .xxx-tab__item span {
+    padding-top: 0;
+}
+
+.xxx-tab__item.xxx-tab__item--p-b-5 a, .xxx-tab__item.xxx-tab__item--p-b-5 span {
+    padding-bottom: 5px;
+}
+
+.xxx-tab__item.active a, .xxx-tab__item.active span {
+    color: #333e50;
+    border-bottom: 2px solid #95ce5a;
+    pointer-events: none;
+}
+
+.xxx-tab__item:last-child a, .xxx-tab__item:last-child span {
+    margin-right: 0;
+}
+
+.xxx-tab__item a, .xxx-tab__item span {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-right: 30px;
+    color: #adb4bf;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.xxx-tab__item span {
+    cursor: pointer;
+    display: inline-block;
+}
